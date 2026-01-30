@@ -56,7 +56,7 @@ def load_models():
 @st.cache_data
 def load_training_data():
     """Cargar datos de entrenamiento para estadísticas"""
-    data_path = Path(__file__).parent.parent / "data" / "raw"
+    data_path = Path(__file__).parent.parent / "data" / "processed"
     df = pd.read_csv(data_path / "cleaned_train.csv")
     return df
 
@@ -333,7 +333,7 @@ def main():
         st.subheader("🎯 Performance y Validación del Modelo")
         
         # Cargar datos de test para análisis
-        data_path = Path(__file__).parent.parent / "data" / "raw"
+        data_path = Path(__file__).parent.parent / "data" / "processed"
         df_full = pd.read_csv(data_path / "cleaned_train.csv")
         
         # Preparar datos igual que en rebuild_models.py
