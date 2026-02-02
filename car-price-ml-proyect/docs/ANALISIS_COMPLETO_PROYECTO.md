@@ -119,6 +119,7 @@ proyecto7-grupo3-problema-de-regresion
    - Target Encoding para 'brand' (ideal para muchas categorías)
    - One-Hot Encoding para variables categóricas
    - ColumnTransformer bien implementado
+   - **Nota:** en esta versión el pipeline de entrenamiento aplica winsorización también sobre `price` (el target). Además, no se crea ni persiste `brand_stats` ni una bandera `is_luxury` en la versión actual.
 
 2. **Comparación de Modelos (Muy Bien)**
    - Regresión Lineal (baseline)
@@ -251,6 +252,7 @@ Model: XGBoost Optimized
 5. ✅ Aplicación en producción funcional
 6. ✅ Manejo de errores y validaciones
 7. ✅ Reproducibilidad (random_state, venv)
+8. ✅ En la versión final **no** se utiliza la bandera `is_luxury` y el pipeline aplica winsorización también sobre `price`.
 
 **ÁREAS A MEJORAR:**
 1. ⚠️ Falta análisis más profundo de features
