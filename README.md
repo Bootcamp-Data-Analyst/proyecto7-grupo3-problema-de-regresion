@@ -23,23 +23,23 @@ El objetivo es construir un modelo robusto y reproducible que permita estimar el
 
 proyecto7-grupo3-problema-de-regresion
 ├── notebooks/
-│ ├── Data_Cleaning_and_Transformation.ipynb
-│ ├── EDA_Andrés.ipynb
-│ ├── Modelado_Completo_Precios_Coches.ipynb
+│   ├── Data_Cleaning_and_Transformation.ipynb
+│   ├── EDA_Andrés.ipynb
+│   ├── Modelado_Completo_Precios_Coches.ipynb
 ├── app/
-│ ├── streamlit_app.py
-│ ├── rebuild_models.py
+│   ├── streamlit_app.py
+│   ├── rebuild_models.py
 ├── data/
-│ ├── raw/
-│ │ ├── train.csv
-│ │ ├── test.csv
-  ├── processed/
-│ │ ├── cleaned_train.csv
-│ │ ├── cleaned_test.csv
+│   ├── raw/
+│   │   ├── train.csv
+│   │   ├── test.csv
+│   ├── processed/
+│   │   ├── cleaned_train.csv
+│   │   ├── cleaned_test.csv
 ├── models/
-│ ├── optimized_xgb_model.pkl
-│ ├── encoder_brand.pkl
-│ ├── column_transformer_preprocessor.pkl
+│   ├── optimized_xgb_model.pkl
+│   ├── encoder_brand.pkl
+│   ├── column_transformer_preprocessor.pkl
 ├── requirements.txt
 └── README.md
 
